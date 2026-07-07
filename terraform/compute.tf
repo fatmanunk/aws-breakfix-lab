@@ -11,7 +11,7 @@ data "aws_ami" "al2023" {
 
 resource "aws_instance" "app" {
   count                  = 2
-  ami                    = data.aws_ami.al2023.id
+  ami                    = "ami-00b2eb779cc80e1f9"
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.private[count.index].id
   vpc_security_group_ids = [aws_security_group.app.id]

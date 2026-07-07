@@ -3,3 +3,5 @@
 .terraform/
 *.tfvars
 .terraform.lock.hcl
+terraform/canary.zip
+terraform/canary/
